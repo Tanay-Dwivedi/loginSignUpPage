@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0F0C0"
+    tools:context=".loginAndSignUpAsk">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="15dp"
+        android:backgroundTint="#B4FB87"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="#CCFFCC"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.09">
+
+    </androidx.cardview.widget.CardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/loginBtn"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:elevation="15dp"
+        android:text="@string/login"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:fontFamily="@font/akaya_telivigala_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:neumorph_backgroundColor="#98FB98"
+        app:neumorph_shadowColorDark="#088F8F"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/signUpBtn"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:elevation="15dp"
+        android:text="@string/SignUp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:fontFamily="@font/akaya_telivigala_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:neumorph_backgroundColor="#98FB98"
+        app:neumorph_shadowColorDark="#088F8F"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_description"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_slab_variable_font_wght"
+        android:elevation="20dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/register_lottie"
+        android:layout_margin="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

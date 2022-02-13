@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0F0C0"
+    tools:context=".loginPage">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:fontFamily="@font/lobster_regular"
+        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="15dp"
+        android:backgroundTint="#B4FB87"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/loginName"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:hint="@string/user_name"
+        android:background="@drawable/style"
+        android:textColor="@color/black"
+        android:textColorHint="#80000000"
+        android:textSize="25sp"
+        android:fontFamily="@font/shadows_into_light_regular"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.2"
+        android:autofillHints="name"
+        tools:ignore="RtlHardcoded"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="@drawable/style2"
+        android:fontFamily="@font/shadows_into_light_regular"
+        android:textStyle="bold"
+        android:hint="@string/password"
+        android:importantForAutofill="yes"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#80000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.80"
+        tools:ignore="RtlHardcoded"
+        android:autofillHints="password" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/loginBtn"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:paddingBottom="2dp"
+        android:fontFamily="@font/akaya_telivigala_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.25"
+        app:neumorph_backgroundColor="#98FB98"
+        app:neumorph_shadowColorDark="#088F8F"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="10dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.2"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/user_lottie">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.8"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pass_lottie">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

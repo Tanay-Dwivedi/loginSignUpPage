@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0F0C0"
+    tools:context=".signUpPage">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/SignUp"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:fontFamily="@font/lobster_regular"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="15dp"
+        android:backgroundTint="#B4FB87"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/signUpName"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:fontFamily="@font/shadows_into_light_regular"
+        android:textStyle="bold"
+        android:hint="@string/user_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#80000000"
+        android:textSize="25sp"
+        android:background="@drawable/style"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toTopOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="LabelFor,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/signupEmail"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:fontFamily="@font/shadows_into_light_regular"
+        android:textStyle="bold"
+        android:background="@drawable/style"
+        android:hint="@string/email"
+        android:importantForAutofill="yes"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="#80000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.63"
+        android:autofillHints="emailAddress"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/signupPassword"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="@drawable/style2"
+        android:hint="@string/password"
+        android:fontFamily="@font/shadows_into_light_regular"
+        android:textStyle="bold"
+        android:importantForAutofill="yes"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#80000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.9"
+        android:autofillHints="password"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/signUpPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:fontFamily="@font/shadows_into_light_regular"
+        android:textStyle="bold"
+        android:hint="@string/contact_number"
+        android:background="@drawable/style2"
+        android:importantForAutofill="yes"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="#80000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.37"
+        android:autofillHints="phone"
+        tools:ignore="RtlHardcoded" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/signUpBtn"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        style="@style/Widget.Neumorph.Button"
+        android:text="@string/SignUp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:fontFamily="@font/akaya_telivigala_regular"
+        app:neumorph_backgroundColor="#98FB98"
+        app:neumorph_shadowColorDark="#088F8F"
+        app:neumorph_shadowElevation="5dp"
+        android:paddingBottom="2dp"
+        app:neumorph_shapeType="flat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="10dp"
+        app:lottie_rawRes="@raw/user_lottie"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.100000024">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/phone_lottie"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.39">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/email_lottie"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.61">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pass_lottie"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.91">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

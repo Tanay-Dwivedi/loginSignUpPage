@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Login&amp;SignUp</string>
+    <string name="app_description"><b><i>General description of the application</i></b></string>
+    <string name="login">Login</string>
+    <string name="SignUp">SignUp</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="contact_number">Contact Number</string>
+</resources>
