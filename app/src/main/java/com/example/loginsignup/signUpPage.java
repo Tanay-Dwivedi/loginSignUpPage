@@ -116,7 +116,7 @@ public class signUpPage extends AppCompatActivity {
 
                 //firebase updating
                 progressDialog.dismiss();
-                Toast.makeText(getApplicationContext(), "Signup Successful", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "SignUp Successful", Toast.LENGTH_SHORT).show();
 
                 //navigating to the new activity
                 Intent intent = new Intent(signUpPage.this, loginPage.class);

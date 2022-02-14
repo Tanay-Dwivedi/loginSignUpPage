@@ -15,7 +15,7 @@ import java.util.Objects;
 public class SplashScreen extends AppCompatActivity {
 
     VideoView videoView;
-    final static int totalSplashScreenTime = 500;
+    final static int totalSplashScreenTime = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
