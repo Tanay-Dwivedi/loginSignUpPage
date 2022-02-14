@@ -61,30 +61,30 @@ public class signUpPage extends AppCompatActivity {
         strPassword = sgnPass.getText().toString();
 
         if(strName.isEmpty()) {
-            sgnName.setError("Please fill the field");
+            sgnName.setError("Please give the valid username");
             sgnName.requestFocus();
             return;
         }
 
         if(!numberCheck(strPhone)) {
-            sgnPhone.setError("Please fill the field");
+            sgnPhone.setError("Please give the valid Phone Number");
             sgnPhone.requestFocus();
             return;
         }
 
         if(!Patterns.EMAIL_ADDRESS.matcher(strEmail).matches()) {
-            sgnEmail.setError("Please fill the field");
+            sgnEmail.setError("Please give the valid email address");
             sgnEmail.requestFocus();
             return;
         }
 
         if(strPassword.isEmpty()) {
-            sgnPass.setError("Please fill the field");
+            sgnPass.setError("Please give the valid password");
             sgnPass.requestFocus();
             return;
         }
         else if(!passwordValidate(strPassword)) {
-            sgnPass.setError("Enter Min 5 digits");
+            sgnPass.setError("Enter Min 6 digits");
             sgnPass.requestFocus();
             return;
         }
@@ -136,7 +136,7 @@ public class signUpPage extends AppCompatActivity {
 
     private boolean passwordValidate(String strPassword) {
 
-        Pattern p = Pattern.compile(".{5}");
+        Pattern p = Pattern.compile("[a-zA-Z0-9@#$%^&+=].{6,20}");
         Matcher m = p.matcher(strPassword);
         return m.matches();
     }

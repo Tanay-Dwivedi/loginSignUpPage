@@ -49,11 +49,11 @@ public class loginPage extends AppCompatActivity {
         str_lgn_pass = lgnPass.getText().toString();
 
         if(str_lgn_name.isEmpty()) {
-            lgnName.setError("Please fill the field");
+            lgnName.setError("Please give the valid username");
             lgnName.requestFocus();
         }
         if(str_lgn_pass.isEmpty()) {
-            lgnPass.setError("Please fill the field");
+            lgnPass.setError("Please give the valid password");
             lgnPass.requestFocus();
         }
 
